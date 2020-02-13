@@ -1,0 +1,78 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "animations"
+// Critical css
+::placeholder
+  color: #7c7c7c
+input, textarea
+  outline: none
+  &:focus
+    color: #7c7c7c
+*
+  margin: 0
+  padding: 0
+button
+  @include reset-button
+  cursor: pointer
+a
+  text-decoration: none
+  color: #fff
+a:hover
+  text-decoration: underline
+body
+  min-width: 320px
+  max-width: 1920px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  overflow-x: hidden
+  color: #000
+  background-color: $white
+  font-family: 'Roboto', sans-serif
+  @include font(400,16px,24px)
+// Headers text configs
+h1,h2,h3,h4,h5,h6
+  font-family: 'Montserrat',sans-serif
+  font-weight: 700
+  margin: 5px 0
+h1
+  @include font(700,60px,48px)
+h2
+  @include font(700,30px,40px)
+h3
+  @include font(700,24px,40px)
+h4
+  @include font(700,20px,40px)
+img
+  max-width: 100%
+  height: auto
+.hidden
+  display: none !important
+#main,#footer
+  overflow: hidden
+#header
+  position: relative
+#main,#footer,#header
+  width: 100%
+.btn
+  border-radius: 18px
+  text-align: center
+.btn:hover
+  background-color: #339dcd
+// containers
+.container
+  max-width: 1170px
+  width: 100%
+  margin: 0 auto
+  padding-left: 25px
+  padding-right: 25px
+.grid-container
+  display: grid
+  justify-content: space-between
+.flex-container
+  display: flex
+  justify-content: space-between
+//Header
+
+@import "media"
