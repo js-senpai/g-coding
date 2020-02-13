@@ -29,21 +29,16 @@ body
   overflow-x: hidden
   color: #000
   background-color: $white
-  font-family: 'Roboto', sans-serif
-  @include font(400,16px,24px)
-// Headers text configs
-h1,h2,h3,h4,h5,h6
-  font-family: 'Montserrat',sans-serif
-  font-weight: 700
-  margin: 5px 0
-h1
-  @include font(700,60px,48px)
-h2
-  @include font(700,30px,40px)
-h3
-  @include font(700,24px,40px)
-h4
-  @include font(700,20px,40px)
+  font-family: 'Titillium Web', sans-serif
+  @include font(400,18px,27px)
+  h1
+    @include font(400,48px,73px)
+  h2
+    @include font(600,30px,55px)
+  h3
+    @include font(600,24px,55px)
+  h4
+    @include font(600,20px,55px)
 img
   max-width: 100%
   height: auto
@@ -56,13 +51,35 @@ img
 #main,#footer,#header
   width: 100%
 .btn
-  border-radius: 18px
+  border-radius: 45px
   text-align: center
+  color: $white
+  background-color: #F56338
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+  border: 1px solid transparent
+  text-decoration: none
+  width: 193px
+  height: 47px
+  line-height: 47px
+  font-weight: bold
+  text-transform: capitalize
+  font-size: 14px
 .btn:hover
-  background-color: #339dcd
+  background-color: $white
+  color: #F37049
+  border: 1px solid $white
+  text-decoration: none
+.btn.btn-white
+  background-color: transparent
+  border: 1px solid #fff
+.btn-white:hover
+  background-color: $white
+  color: #F37049
+.subtitle
+  text-align: center
 // containers
 .container
-  max-width: 1170px
+  max-width: 1120px
   width: 100%
   margin: 0 auto
   padding-left: 25px
@@ -74,5 +91,84 @@ img
   display: flex
   justify-content: space-between
 //Header
-
+.header
+  position: fixed
+  top: 0
+  background: #FD773E
+  left: 0
+  right: 0
+  padding: 40px 0
+  z-index: 2
+  &>.flex-container
+    align-items: center
+.nav-menu-item
+  max-height: 30px
+  a
+    padding: 0 30px
+.nav-menu-item:nth-of-type(2)
+  border-left: 2px solid #FFFFFF
+  border-right: 2px solid #FFFFFF
+//First block
+.first-block
+  background: url("../img/_src/first-block/First-screen-block.jpg") no-repeat #FD773E
+  background-size: cover
+  background-position: center
+  height: 900px
+  margin-top: 125px
+  position: relative
+  .title
+    padding-top: 200px
+    color: $white
+    max-width: 723px
+  .btn-more
+    width: 277px
+    height: 71px
+    line-height: 71px
+    font-size: 24px
+    margin-top: 50px
+.first-block-text
+  max-width: 365px
+  font-size: 24px
+  line-height: 37px
+  color: #FFEC02
+.first-block-item
+  width: 100%
+.first-block-item:last-of-type
+  display: none
+.computer
+  position: absolute
+  right: 0
+  top: 95px
+//Second Block
+.second-block
+  background: url('../img/_src/second-block/Second section.png') no-repeat center
+  background-size: cover
+.block-subtitle
+  text-align: center
+  font-size: 30px
+  margin-bottom: 43px
+.second-block-clock-item
+  position: relative
+.second-block-clock-item:nth-of-type(2)::before,.second-block-clock-item:nth-of-type(2)::after
+  content: ':'
+  position: absolute
+  top: 40px
+  font-size: 48px
+.second-block-clock-item:nth-of-type(2)::before
+  left: -26px
+.second-block-clock-item:nth-of-type(2)::after
+  right: -28px
+.second-block-clock-time
+  width: 327px
+  height: 125px
+  text-align: center
+  line-height: 125px
+  background: linear-gradient(180deg, #FFDF6C 48.96%, #FEB527 100%)
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+  border-radius: 15px
+  font-weight: bold
+  font-size: 48px
+.second-block-clock-info-time
+  text-align: center
+  margin-top: 20px
 @import "media"
