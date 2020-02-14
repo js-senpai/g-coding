@@ -79,7 +79,7 @@ img
   text-align: center
 // containers
 .container
-  max-width: 1120px
+  max-width: 1140px
   width: 100%
   margin: 0 auto
   padding-left: 25px
@@ -98,7 +98,7 @@ img
   left: 0
   right: 0
   padding: 40px 0
-  z-index: 2
+  z-index: 5
   &>.flex-container
     align-items: center
 .nav-menu-item
@@ -113,7 +113,7 @@ img
   background: url("../img/_src/first-block/First-screen-block.jpg") no-repeat #FD773E
   background-size: cover
   background-position: center
-  height: 900px
+  height: 955px
   margin-top: 125px
   position: relative
   .title
@@ -143,6 +143,12 @@ img
 .second-block
   background: url('../img/_src/second-block/Second section.png') no-repeat center
   background-size: cover
+  padding: 65px 0
+  position: relative
+  top: -95px
+  z-index: 2
+  .subtitle
+    margin-top: 80px
 .block-subtitle
   text-align: center
   font-size: 30px
@@ -171,4 +177,194 @@ img
 .second-block-clock-info-time
   text-align: center
   margin-top: 20px
+// Third block
+.third-block
+  background: url('../img/_src/third-block/Thirdsection.png') no-repeat center
+  background-size: cover
+  margin-top: -190px
+  padding: 82px 0
+.third-block-container
+  margin-top: 25px
+.third-block-item:first-of-type
+  width: 55%
+  z-index: 1
+.third-block-item:last-of-type
+  width: 45%
+.third-block-info
+  padding: 30px 70px
+  background: #F3F5FB
+  border-radius: 124.5px
+  margin-bottom: 15px
+  margin-left: -10px
+  position: relative
+.third-block-info:nth-of-type(1)
+  left: -1px
+.third-block-info:nth-of-type(2)
+  left: 5px
+.third-block-info:nth-of-type(3)
+  left: -10px
+.third-block-info-title
+  color: #F26322
+  font-weight: bold
+  font-size: 22px
+  margin-bottom: 18px
+  margin-top: 0
+.third-block-info-text
+  font-size: 18px
+  line-height: 27px
+  color: #000
+  span
+    display: block
+//Fourth Block
+.multiply-block
+  background: center/cover no-repeat url("../img/_src/fourth-block/Fourthsection.png")
+.diagrama-container
+  width: 468px
+  height: 538px
+  margin: 0 auto
+  background: center/cover no-repeat url("../img/_src/fourth-block/diagram.png"), center/40% no-repeat url('../img/_src/fourth-block/magentoone1.png')
+  position: relative
+.diagrama-item
+  font-weight: bold
+  font-size: 12px
+  color: $white
+  position: absolute
+  line-height: 18px
+.diagrama-item:first-of-type
+  top: 75px
+  left: 145px
+  max-width: 96px
+.diagrama-item:nth-of-type(2)
+  top: 136px
+  left: 330px
+  max-width: 96px
+.diagrama-item:nth-of-type(3)
+  top: 354px
+  left: 318px
+  max-width: 96px
+.diagrama-item:nth-of-type(4)
+  top: 395px
+  left: 145px
+  max-width: 85px
+.diagrama-item:nth-of-type(5)
+  top: 236px
+  left: 29px
+  max-width: 85px
+//Fifth block
+.fifth-block
+  position: relative
+.rocket
+  position: absolute
+  top: 0
+  right: 0
+  width: 25%
+.fifth-block-list-item
+  display: flex
+  align-items: center
+  margin-bottom: 50px
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    display: inline-block
+    padding: 10px 25px
+    line-height: 78px
+    font-size: 48px
+    font-weight: bold
+    background: center/100% no-repeat url('../img/_src/firth-block/Vector.png')
+    color: $white
+    margin-right: 30px
+  .fifth-block-list-title
+    margin-top: 0
+    font-size: 22px
+    line-height: 33px
+    color: #F56338
+  .fifth-block-list-text
+    font-size: 18px
+    color: #3D3D3E
+.fifth-block-list-item:nth-of-type(2n+2)
+  margin-left: 65px
+.fifth-block-list-item:nth-of-type(1)::before
+  content: '1'
+.fifth-block-list-item:nth-of-type(2)::before
+  content: '2'
+.fifth-block-list-item:nth-of-type(3)::before
+  content: '3'
+.fifth-block-list-item:nth-of-type(4)::before
+  content: '4'
+.fifth-block-list-item:nth-of-type(5)::before
+  content: '5'
+.fifth-block-list-item:nth-of-type(6)::before
+  content: '6'
+.fifth-block-list-item:nth-of-type(7)::before
+  content: '7'
+//sixth-block
+.packets-item
+  background: #FFFFFF
+  border: 1px solid #E6E8EE
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+  border-radius: 38px
+  padding: 20px
+  text-align: center
+.packets-item:nth-of-type(2)
+  margin: 0 32px
+.packet-title
+  margin-top: 0
+  color: #F27C59
+.packet-img
+  margin-bottom: 30px
+  height: 90px
+.packet-list
+  line-height: 30px
+  font-size: 14px
+  color: #3D3D3E
+.packet-list-item
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 15px
+.packet-list-item:last-of-type
+  .packet-list
+    margin-top: 85px
+.packet-list-item::before
+  content: ''
+  display: block
+  width: 3px
+  height: 3px
+  border-radius: 50%
+  background: #F27C59
+  margin-right: 5px
+.btn-white.btn-price
+  font-weight: bold
+  color: #3D3D3E
+  border: 1px solid #F56338
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+  margin-bottom: 30px
+.btn-white.btn-price:hover
+  background-color: #F56338
+  color: #fff
+.info
+  background:  center/100% no-repeat url("../img/_src/sixth-block/info.png")
+  margin-top: 70px
+  padding: 42px 0
+  text-align: center
+  font-size: 16px
+//Seven Block
+.advantages-list-item
+  background: #F56338
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+  border-radius: 15px
+  max-width: 212px
+  padding: 33px 21px
+  text-align: center
+  color: $white
+  font-weight: bold
+  line-height: 30px
+  margin-right: 10px
+  font-size: 17px
+  strong
+    display: block
+    font-size: 32px
+.case-slider-item
+  width: 249px
 @import "media"

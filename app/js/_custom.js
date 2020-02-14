@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
         elements_selector: ".lazy"
     });
     lazyLoadInstance.update();
-
+    $('.case-slider ').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        infinite: true,
+        slidesToShow: 3
+    })
 });
 
