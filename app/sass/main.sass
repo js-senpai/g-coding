@@ -97,7 +97,7 @@ img
   background: #FD773E
   left: 0
   right: 0
-  padding: 40px 0
+  padding: 20px 0
   z-index: 5
   &>.flex-container
     align-items: center
@@ -114,7 +114,6 @@ img
   background-size: cover
   background-position: center
   height: 955px
-  margin-top: 125px
   position: relative
   .title
     padding-top: 200px
@@ -217,7 +216,7 @@ img
     display: block
 //Fourth Block
 .multiply-block
-  background: center/cover no-repeat url("../img/_src/fourth-block/Fourthsection.png")
+  background: center/100% no-repeat url("../img/_src/fourth-block/Fourthsection.png")
 .diagrama-container
   width: 468px
   height: 538px
@@ -299,6 +298,11 @@ img
 .fifth-block-list-item:nth-of-type(7)::before
   content: '7'
 //sixth-block
+.sixth-block
+  background: top center/100% no-repeat url('../img/_src/sixth-block/sixthsection.png')
+  padding-top: 155px
+  margin-top: -110px
+  padding-bottom: 260px
 .packets-item
   background: #FFFFFF
   border: 1px solid #E6E8EE
@@ -325,7 +329,7 @@ img
   margin-bottom: 15px
 .packet-list-item:last-of-type
   .packet-list
-    margin-top: 85px
+    margin-top: 115px
 .packet-list-item::before
   content: ''
   display: block
@@ -350,6 +354,8 @@ img
   text-align: center
   font-size: 16px
 //Seven Block
+.seven-block
+  margin-top: -145px
 .advantages-list-item
   background: #F56338
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
@@ -367,4 +373,71 @@ img
     font-size: 32px
 .case-slider-item
   width: 249px
+.case-slider
+  max-width: 790px
+  margin: 0 auto
+  .slick-track
+    padding: 20px 0
+  .slick-active
+    width: 249px
+    height: 411px
+  .slick-current + .slick-active
+    width: 293px
+    height: 411px
+    margin-top: -30px
+//Eeight block
+.eight-block-bottom-content
+  margin-left: 66px
+  padding-top: 50px
+.second-multiply
+  background: top center no-repeat url('../img/_src/eigth-block/Eightsection.png')
+//FAQ
+.nine-block
+  background: top center/100% no-repeat url('../img/_src/nine-block/Ninesection.png')
+  padding-top: 200px
+  margin-top: -150px
+.faq-item
+  width: 50%
+  .collapsible-header
+    font-size: 18px
+    align-items: center
+    margin-bottom: 40px
+.faq-dec
+  color: #F56338
+.faq-tab
+  border: none
+  box-shadow: none
+  .collapsible-body
+    padding-right: 0
+.faq-tab-item.active
+  .faq-arrow
+    transform: rotate(-180deg)
+.faq-arrow
+  display: block
+  width: 15px
+  height: 10px
+  background: center/100% no-repeat url('../img/icons/array-bottom.svg')
+  transition: all 500ms ease-in-out
+.faq-item:last-of-type
+  position: relative
+  .chat
+    display: block
+    width: 90px
+    height: 90px
+    border: 1px solid #F56338
+    font-weight: 600
+    font-size: 18px
+    color: #4E4E4F
+    border-radius: 50%
+    text-align: center
+    line-height: 90px
+    margin: 0 auto
+    margin-top: 25%
+.footer-info
+  position: relative
+.footer-info-bg
+  width: 100%
+  height: 242px
+  background: center/100% no-repeat url('../img/_src/nine-block/oftenquestions.png')
+  margin-top: -210px
 @import "media"

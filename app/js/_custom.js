@@ -5,10 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     lazyLoadInstance.update();
     $('.case-slider ').slick({
-        centerMode: true,
-        centerPadding: '60px',
         infinite: true,
-        slidesToShow: 3
+        variableWidth: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false
     })
+    // FAQ
+    $('.faq-tab').collapsible();
+    new WOW().init();
 });
 
