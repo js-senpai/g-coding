@@ -1,10 +1,326 @@
 @import "vars"
+@media screen and (min-width: 830px)
+  .case-slider
+    .slick-current + .slick-active
+      width: 293px
+      height: 411px
+      margin-top: -30px
 /*==========  Desktop First  ==========*/
 @media screen and (max-width: 1150px)
   /**/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1190px)
   /**/
+@media only screen and (max-width: 1130px)
+  .container
+    padding-left: 15px
+    padding-right: 15px
+  .mobile-img,.mobile-block
+    display: block
+  .pc-img,.pc-block
+    display: none
+  .subtitle
+    font-size: 24px
+    text-align: center
+    line-height: 30px
+    margin-top: 5px
+  .nav-menu-item a
+    font-size: 14px
+  .nav-menu-item:nth-of-type(2)
+    border: none
+  .first-block
+    height: 100vh
+    .btn-more
+      z-index: 3
+  .logo
+    display: block
+    width: 30%
+    img
+      vertical-align: middle
+  .nav-menu
+    width: 70%
+    justify-content: flex-end
+  .nav-menu-item a
+    padding: 0 15px
+  //First block
+  .computer
+    display: none
+  .first-block-item:last-of-type
+    display: block
+    order: -1
+    width: 30%
+    min-width: 154px
+    margin: 100px auto 5px auto
+  .first-block .flex-container
+    flex-wrap: wrap
+  .first-block
+    text-align: center
+    background: top center/100% no-repeat url('../img/_src/first-block/First-screen-mobile.jpg')
+    .title
+      padding-top: 0
+      font-size: 24px
+      max-width: 100%
+      line-height: 37px
+    .first-block-text
+      max-width: 100%
+      font-size: 14px
+      line-height: 21px
+    .btn-more
+      width: 171px
+      height: 47px
+      line-height: 47px
+      font-size: 12px
+  //Second block
+  .second-block
+    background: top center/100% no-repeat url('../img/_src/second-block/Second-section-mobile.png')
+    padding-bottom: 150px
+  .second-block-clock-time
+    background: transparent
+    box-shadow: none
+  .second-block-clock
+    background: linear-gradient(180deg, #FFDF6C 48.96%, #FEB527 100%)
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    border-radius: 15px
+    height: 43px
+    line-height: 43px
+    font-size: 14px
+  .second-block-clock-item
+    width: calc(100%/3)
+    display: flex
+    justify-content: center
+    align-content: center
+  .second-block-clock-time
+    height: 100%
+    line-height: 43px
+    width: auto
+    margin-right: 5px
+  .second-block-clock-info-time
+    margin-top: 0
+  .second-block-clock-time,.second-block-clock-item:nth-of-type(2)::before,.second-block-clock-item:nth-of-type(2)::after
+    font-size: 14px
+  .second-block-clock-item:nth-of-type(2)::after, .second-block-clock-item:nth-of-type(2)::before
+    top: 0
+  .second-block-clock-item:nth-of-type(2)::after
+    right: 0
+  .second-block-clock-item:nth-of-type(2)::before
+    left: 0
+  //Third block
+  .third-block
+    background-position: top center
+    background-image: url('../img/_src/third-block/Third-section-mobile.png')
+  .third-block-container
+    flex-wrap: wrap
+    .mobile-img
+      margin: 30px auto
+    .third-block-item
+      width: 100%
+      text-align: center
+  .third-block-item:first-of-type
+    position: relative
+    &::after
+      content: ''
+      display: block
+      height: 53px
+      width: 5px
+      background: top center/100% 100% no-repeat url('../img/icons/line.svg')
+      position: absolute
+      bottom: -8px
+      left: 50.6%
+  .third-block-info
+    margin-bottom: 45px
+    position: relative
+  .third-block-info:not(:last-of-type)::after
+    content: ''
+    display: block
+    height: 55px
+    z-index: 1
+    width: 5px
+    background: top center/100% 100% no-repeat url('../img/icons/line.svg')
+    position: absolute
+    bottom: -50px
+    left: 50.6%
+  .third-block-info-title
+    font-size: 14px
+    margin-bottom: 6px
+  .third-block-info-text
+    font-size: 14px
+    line-height: 21px
+  .third-block-info:nth-of-type(2)
+    left: 0
+  //Fourth Block
+  .multiply-block
+    background: none
+  .fourth-block
+    background: top center/100% no-repeat url('../img/_src/fourth-block/Fourth-section-mobile.png')
+    margin-top: -145px
+    padding: 60px 0
+  .diagrama-container
+    background-image: url('../img/_src/fourth-block/diagram-mobile.png')
+    width: 346px
+    height: 380px
+  .diagrama-item
+    color: #3D3D3D
+    font-size: 11px
+    line-height: 17px
+  .diagrama-item:first-of-type
+    top: 50px
+    left: 100px
+  .diagrama-item:nth-of-type(2)
+    top: 74px
+    left: 208px
+  .diagrama-item:nth-of-type(3)
+    top: 219px
+    left: 240px
+  .diagrama-item:nth-of-type(4)
+    top: 280px
+    left: 160px
+    max-width: 75px
+  .diagrama-item:nth-of-type(5)
+    top: 181px
+    left: 24px
+  //Fifth block
+  .fifth-block
+    background: top center/100% no-repeat url('../img/_src/firth-block/Fifth-section-mobile.png')
+    padding: 20px 0
+  .fifth-block-list-item::before
+    padding: 10px 15px
+    font-size: 18px
+    line-height: 27px
+    float: left
+    margin-right: 24px
+  .fifth-block-list-item
+    display: block
+    margin-bottom: 20px
+    .fifth-block-list-title
+      margin-bottom: 5px
+      font-size: 16px
+      line-height: 24px
+      padding-top: 15px
+    .fifth-block-list-text
+      font-size: 14px
+      clear: both
+  .fifth-block-list-item:nth-of-type(2n+2)
+    margin-left: 0
+  .rocket
+    width: 105px
+    top: 155px
+    right: -25px
+  //Sixth block
+  .sixth-block
+    margin-top: -140px
+    padding-bottom: 195px
+    background: top center/100% no-repeat url('../img/_src/sixth-block/sixth-section-mobile.png')
+  .paket-tab
+    display: flex
+    justify-content: center
+    .tab-btn
+      color: #000000
+      cursor: pointer
+      border: 1px solid #E6E8EF
+      margin-bottom: 30px
+    .tab-btn:hover,.tab-btn.active
+      background: #F56338
+      color: $white
+    .tab-btn:nth-of-type(2)
+      margin-left: 9px
+      margin-right: 9px
+  .packets-item:last-of-type .packet-list
+    margin-top: 0
+  .packets-item
+    display: none
+    width: 80%
+    min-width: 320px
+    visibility: visible !important
+    .btn-price,.btn-popup
+      display: block
+      margin-left: auto
+      margin-right: auto
+    .btn-price
+      margin-top: 25px
+  .packet-list-item
+    margin-bottom: 5px
+  .packets-item.active
+    display: block
+  .packets-item:nth-of-type(2),.packets-item
+    margin-left: auto
+    margin-right: auto
+  .info
+    font-size: 14px
+    padding: 14px 47px
+    background-size: 100% 100%
+  //Seven block
+  .second-multiply
+    background: none
+  .seven-block
+    padding-bottom: 50px
+    background: top center/100% no-repeat url('../img/_src/seven-block/Seven-section.png')
+  .advantages-list
+    flex-wrap: wrap
+    justify-content: center
+  .advantages-list-item
+    margin-bottom: 15px
+    maxwidth: 168px
+    width: 45%
+    min-width: 150px
+    line-height: 23px
+    height: 168px
+    padding: 15px
+    font-size: 14px
+  //Eight block
+  .eigth-block
+    background: top center/100% no-repeat url('../img/_src/eigth-block/Eight-section-mobile.png')
+  .subtitle
+    margin-bottom: 50px
+  .case-slider
+    .slick-current.slick-active
+      width: 293px
+      height: 411px
+      margin-top: -30px
+    .slick-active:not(.slick-center)
+      opacity: 0.4
+  .eigth-block
+    padding-bottom: 60px
+    .container
+      padding-right: 0
+      padding-left: 0
+  .eigth-block-bottom
+    position: relative
+  .eigth-block-bottom,.eight-block-bottom-item:first-of-type
+    flex-wrap: wrap
+  .eight-block-bottom-img,.eight-block-bottom-content
+    margin-left: auto
+    margin-right: auto
+  .eight-block-bottom-content
+    padding-top: 25px
+    .eight-block-title
+      margin-top: 0
+  .eight-block-bottom-item:last-of-type
+    position: absolute
+    bottom: -20px
+    left: -30px
+    max-width: 100px
+  //Nine block
+  .nine-block
+    margin-top: 0
+    padding-top: 0
+    background: top center/100% url('../img/_src/nine-block/Nine-section-mobile.png')
+    .mobile-block
+      padding-bottom: 10px
+    .btn-more
+      display: block
+      margin: 15px auto
+  .faq-item
+    width: 100%
+  .faq-item:last-of-type
+    display: none
+  .faq-tab
+    font-size: 14px
+  .faq-item
+    .collapsible-header
+      margin-bottom: 10px
+      font-size: 14px
+    .collapsible-body
+      padding: 5px 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 990px)
   /**/
@@ -16,7 +332,8 @@
   /**/
 /* Extra Small Devices, Phones */
 @media (max-width: 480px)
-  /**/
+  .nine-block,.first-block
+    background-size: 100% 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   /**/
