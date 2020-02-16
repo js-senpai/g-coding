@@ -283,6 +283,7 @@ img
     line-height: 33px
     color: #F56338
   .fifth-block-list-text
+    width: 90%
     font-size: 18px
     color: #3D3D3E
 .fifth-block-list-item:nth-of-type(2n+2)
@@ -331,9 +332,11 @@ img
   justify-content: center
   align-items: center
   margin-bottom: 15px
-.packets-item:last-of-type
-  .packet-list
-    margin-top: 115px
+  span
+    width: fit-content
+//.packets-item:last-of-type
+//  .packet-list
+//    margin-top: 115px
 .packet-list-item::before
   content: ''
   display: block
@@ -342,6 +345,10 @@ img
   border-radius: 50%
   background: #F27C59
   margin-right: 5px
+.packet-list-item.big-text
+  align-items: flex-start
+  &::before
+    margin-top: 14px
 .btn-white.btn-price
   font-weight: bold
   color: #3D3D3E

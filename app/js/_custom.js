@@ -47,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     $('.eigth-block-bottom .btn-more').click(function (e) {
         e.preventDefault();
-        $('.first-popup').fadeIn('slow');
-        $('.first-popup .packet-input').val(currentTitle);
+        $('.second-popup').fadeIn('slow');
     });
     $('.close-popup').click(function(){
         $(this).parent().parent().parent().fadeOut('slow')
