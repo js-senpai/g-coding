@@ -355,9 +355,11 @@ img
   border: 1px solid #F56338
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
   margin-bottom: 30px
-.btn-white.btn-price:hover
+.btn-white.btn-price:not(.disabled-link):hover
   background-color: #F56338
   color: #fff
+.btn-price.disabled-link:hover
+  transform: none
 .info
   background:  center/100% no-repeat url("../img/_src/sixth-block/info.png")
   margin-top: 70px
@@ -533,4 +535,9 @@ img
 .btn-submit
   margin: 0 auto
   display: block
+.popup-thx,.popup-error
+  display: none
+  font-size: 32px
+  text-align: center
+  font-weight: bold
 @import "media"

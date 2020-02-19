@@ -60,6 +60,63 @@ document.addEventListener("DOMContentLoaded", function() {
                 $('.'+currentTab).addClass('active').siblings().removeClass('active')   ;
             }
         }
-    })
+    });
+    //Mail send
+    $('#first_popup').submit(function (e) {
+        e.preventDefault();
+        let form_data = $(this).serialize();
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "send-first-popup.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                //код в этом блоке выполняется при успешной отправке сообщения
+                $(this).find('.row').fadeOut('slow');
+                $(this).find('.popup-thx').fadeIn('slow');
+                setTimeout(function () {
+                    $('.first-popup').fadeOut('slow');
+                    $(this).find('.popup-thx').fadeOut('slow');
+                    $(this).find('.row').fadeIn('slow');
+                },1500)
+            },
+            error: function(){
+                $(this).find('.row').fadeOut('slow');
+                $(this).find('.popup-error').fadeIn('slow');
+                setTimeout(function () {
+                    $('.first-popup').fadeOut('slow');
+                    $(this).find('.popup-error').fadeOut('slow');
+                    $(this).find('.row').fadeIn('slow');
+                },1500);
+            }
+            });
+    });
+    $('#second_form').submit(function (e) {
+        e.preventDefault();
+        let form_data = $(this).serialize();
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "send-second-popup.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                //код в этом блоке выполняется при успешной отправке сообщения
+                $(this).find('.row').fadeOut('slow');
+                $(this).find('.popup-thx').fadeIn('slow');
+                setTimeout(function () {
+                    $('.second-popup').fadeOut('slow');
+                    $(this).find('.popup-thx').fadeOut('slow');
+                    $(this).find('.row').fadeIn('slow');
+                },1500)
+            },
+            error: function(){
+                $(this).find('.row').fadeOut('slow');
+                $(this).find('.popup-error').fadeIn('slow');
+                setTimeout(function () {
+                    $('.second-popup').fadeOut('slow');
+                    $(this).find('.popup-error').fadeOut('slow');
+                    $(this).find('.row').fadeIn('slow');
+                },1500);
+            }
+        });
+    });
 });
 

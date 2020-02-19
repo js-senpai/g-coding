@@ -2,11 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<title>Erste Agentur in Deutschland mit automatisierter Magento Migration </title>
+	<meta name="description" content="Erste Agentur in Deutschland mit automatisierter Magento Migration ">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
 	<link rel="stylesheet" href="css/styles.min.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136109038-1"></script>
@@ -48,7 +47,7 @@
 			<ul class="flex-container nav-menu">
 				<li class="nav-menu-item"><a href="#Offer" class="scroll-to">Offer</a></li>
 				<li class="nav-menu-item"><a href="#FAQ" class="scroll-to">FAQ</a></li>
-				<li class="nav-menu-item"><a href="#Impressum" class="scroll-to">Impressum</a></li>
+				<li class="nav-menu-item"><a href="impressum.html">Impressum</a></li>
 			</ul>
 			<!-- Nav menu -->
 		</div>
@@ -226,7 +225,7 @@
 						  <li class="packet-list-item"><span>Standart-Template mit Modifikationen</span> </li>
 						  <li class="packet-list-item"><span>Dauer im Durchschnitt bis 3 Wochen</span></li>
 					  </ul>
-					  <span class="btn btn-white btn-price">2995,- € exkl. USt.</span>
+					  <span class="btn btn-white btn-price disabled-link">2995,- € exkl. USt.</span>
 					  <a href="#" class="pulse btn btn-popup">Angebot anfodern</a>
 				  </div>
 				  <div class="wow fadeInUp packets-item standartplus active" data-wow-offset="0">
@@ -239,9 +238,9 @@
 						  <li class="packet-list-item big-text"><span>Datenmigration (Produkte, Kategorien,  Bestellungen, Kunden , Konfiguration und Einstellungen etc.)</span></li>
 						  <li class="packet-list-item"><span>PlugIns inklusive, jedes weiteres PlugIn +70€</span></li>
 						  <li class="packet-list-item big-text"><span>Individuelle Entwicklung des FrontEnds anhand vorliegenden Designs</span></li>
-						  <li class="packet-list-item"><span>DDauer im Durchschnitt bis 5 Wochen</span></li>
+						  <li class="packet-list-item"><span>Dauer im Durchschnitt bis 5 Wochen</span></li>
 					  </ul>
-					  <span class="btn btn-white btn-price">3995,- € exkl. USt.</span>
+					  <span class="btn btn-white btn-price disabled-link">3995,- € exkl. USt.</span>
 					  <a href="#" class="pulse btn btn-popup">Angebot anfodern</a>
 				  </div>
 				  <div class="wow fadeInRight packets-item individual" data-wow-offset="0">
@@ -255,7 +254,7 @@
 						  <li class="packet-list-item"><span>Besonderes Design</span></li>
 						  <li class="packet-list-item"><span>Enterprise Version</span></li>
 					  </ul>
-					  <span class="btn btn-white btn-price">Preis auf Anfrage</span>
+					  <span class="btn btn-white btn-price disabled-link">Preis auf Anfrage</span>
 					  <a href="#" class="pulse btn btn-popup">Angebot anfodern</a>
 				  </div>
 			  </div>
@@ -411,25 +410,25 @@
 <!-- First Block -->
 <div class="popup-container first-popup">
 	<div class="flex-container">
-		<form action="" class="popup  col s12">
+		<form  class="popup  col s12" id="first_popup" method="post">
 			<span class="fas fa-times close-popup"></span>
 			<h3 class="popup-title">Beratung</h3>
 			<div class="row">
-				<input type="hidden" class="packet-input">
+				<input type="hidden" class="packet-input" name="packet">
 				<div class="input-field col s12">
-					<input id="first_name" type="text" class="validate">
+					<input id="first_name" type="text" name="name" class="validate" required>
 					<label for="first_name">Name</label>
 				</div>
 				<div class="input-field col s12">
-					<input id="last_name" type="text" class="validate">
+					<input id="last_name" type="text" name="nachname" class="validate" required>
 					<label for="last_name">Nachname</label>
 				</div>
 				<div class="input-field col s12">
-					<input id="email" type="email" class="validate">
+					<input id="email" type="email" name="email" class="validate" required>
 					<label for="email">Email</label>
 				</div>
 				<div class="input-field col s12">
-					<input id="phone" type="tel" class="validate">
+					<input id="phone" type="tel" name="tel" class="validate">
 					<label for="phone">Telefonnummer</label>
 				</div>
 				<div class="input-field col s12">
@@ -437,22 +436,28 @@
 					</button>
 				</div>
 			</div>
+			<div class="popup-thx">
+				Thanks! We will contact you shortly.
+			</div>
+			<div class="popup-error">
+				Oops! Something wrong.
+			</div>
 		</form>
 	</div>
 </div>
 <!-- Second Block -->
 <div class="popup-container second-popup">
 	<div class="flex-container">
-		<form action="" class="popup  col s12">
+		<form id="second_form" method="post" class="popup  col s12">
 			<span class="fas fa-times close-popup"></span>
 			<h3 class="popup-title">Case-studies und Guide</h3>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="your_name" type="text" class="validate">
+					<input id="your_name" type="text" name="name" class="validate" required>
 					<label for="your_name">Name</label>
 				</div>
 				<div class="input-field col s12">
-					<input id="your_email" type="email" class="validate">
+					<input id="your_email" type="email" name="email" class="validate" required>
 					<label for="your_email">Email</label>
 				</div>
 				<div class="input-field col s12">
